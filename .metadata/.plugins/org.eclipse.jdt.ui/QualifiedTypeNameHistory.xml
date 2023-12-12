@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.jcp.xml.dsig.internal.dom.DOMBase64Transform"/>
+    <fullyQualifiedTypeName name="util.MaHoa"/>
+    <fullyQualifiedTypeName name="util.Email"/>
+    <fullyQualifiedTypeName name="database.anhSanPhamDAO"/>
+    <fullyQualifiedTypeName name="database.SanPhamDAO"/>
+    <fullyQualifiedTypeName name="models.SanPham"/>
+    <fullyQualifiedTypeName name="models.TheLoai"/>
+    <fullyQualifiedTypeName name="models.anhSanPham"/>
+    <fullyQualifiedTypeName name="java.io.ByteArrayOutputStream"/>
+</qualifiedTypeNameHistroy>

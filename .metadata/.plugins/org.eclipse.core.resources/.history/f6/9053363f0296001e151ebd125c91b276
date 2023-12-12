@@ -1,0 +1,138 @@
+package controllers;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import javax.servlet.http.Part;  
+import java.io.InputStream;
+import java.nio.file.Paths;
+import java.util.Random;
+
+import database.KhachHangDAO;
+import database.SanPhamDAO;
+import database.anhSanPhamDAO;
+import models.KhachHang;
+import models.SanPham;
+import models.TheLoai;
+import models.anhSanPham;
+import util.MaHoa;
+
+/**
+ * Servlet implementation class SanPhamController
+ */
+@WebServlet(name = "San-Pham", urlPatterns = { "/San-Pham" })
+public class SanPhamController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public SanPhamController() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		String hanhDong = request.getParameter("hanhDong")+"";
+		if (hanhDong.equals("them-san-pham")) {
+			themSanPham(request, response);
+		} 
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+     
+	
+	
+	// Thêm sản phẩm   
+		  private void themSanPham(HttpServletRequest request, HttpServletResponse response) {
+				
+			    
+				try {
+					String tenSanPham = request.getParameter("tenSanPham");
+					String moTa = request.getParameter("moTa");
+					String theLoaiString = request.getParameter("category");  
+					String giaBanString =  request.getParameter("giaBan");
+					String soLuongString =  request.getParameter("soLuong") ;   
+					// set Attribute 
+					request.setAttribute("tenSanPham", tenSanPham);
+					request.setAttribute("moTa", moTa);
+					request.setAttribute("theLoai", theLoaiString);
+					request.setAttribute("giaBanString",giaBanString);
+					request.setAttribute("soLuong", soLuongString);
+					
+					// Xử lý dữ liệu ảnh   
+					
+					// Lấy dữ liệu file ảnh từ request
+			       Part filePart = request.getPart("fileInput");
+			   
+			       String fileName = Paths.get(filePart.getSubmittedFileName()).getFileName().toString(); // Lấy tên file
+			       InputStream fileContent = filePart.getInputStream(); // Lấy dữ liệu ảnh (InputStream)
+                   
+			       // Set Attribute cho ảnh 
+			       request.setAttribute("fileContent", fileContent);
+			       request.setAttribute("fileName", fileName);
+			         
+					// Tạo đối tượng  
+				
+					anhSanPhamDAO aspd = new anhSanPhamDAO() ;  
+					SanPhamDAO spd  =  new SanPhamDAO() ; 
+					
+					// Tải về bảng sanpham
+					Random rd = new Random();
+					String maSanPham = System.currentTimeMillis() + rd.nextInt(1000) + "";  
+					TheLoai theLoai = new TheLoai(theLoaiString);
+					double giaBan = Double.parseDouble(giaBanString); 
+					int soLuong = Integer.parseInt(soLuongString);
+					SanPham sp =  new SanPham(maSanPham, tenSanPham, giaBan, soLuong, theLoai, moTa);
+					spd.insert(sp) ; 
+					// Tải về bảng imgsp     
+					String idanh = System.currentTimeMillis() + rd.nextInt(1000) + "";  
+					anhSanPham img = new anhSanPham(idanh, tenSanPham, null, null, null);    
+					aspd.insert(img) ; 
+					//  
+					kh.setTenDangNhap(tenDangNhap);
+					kh.setMatKhau(matKhau);
+		
+					KhachHangDAO khd = new KhachHangDAO();
+					KhachHang khachHang = khd.selectByUsernameAndPassWord(kh);	
+		
+					String url = "";
+					if (khachHang.getTenDangNhap().equals("Truong Nguyen") && khachHang.getMatKhau().equals("0dhwuTuASkICnxggHI9X+4Gla4g=")) {
+						 url = "/add-product.jsp";
+					}
+					else if(khachHang != null && khachHang.isTrangThaiXacThuc()) {
+						// if (khachHang != null) {
+						HttpSession session = request.getSession();
+						session.setAttribute("khachHang", khachHang);
+						url = "/index.jsp";
+					} else {
+						request.setAttribute("baoLoi",
+								"Tên đăng nhập hoặc mật khẩu không đúng / hoặc Tài khoản chưa xác thực!");
+						url = "/khachhang/dangnhap.jsp";
+					}
+					RequestDispatcher rd = getServletContext().getRequestDispatcher(url);
+					rd.forward(request, response);
+				} catch (ServletException e) {
+					e.printStackTrace();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+	
+}

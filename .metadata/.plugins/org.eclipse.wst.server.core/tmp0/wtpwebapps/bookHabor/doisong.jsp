@@ -1,0 +1,240 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BookHabor&nbsp;|&nbsp;Đời Sống</title>
+
+<link
+	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+	rel="stylesheet">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+</style>
+<link rel="icon" href="img/logo/logo.png">
+</head>
+<body>
+	<jsp:include page="header.jsp" />
+	<div class="py-3 py-md-5 bg-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h4 class="mb-4">Đời Sống</h4>
+				</div>
+				<div class="col-md-3">
+					<div class="product-card">
+						<div class="product-card-img">
+							<label class="stock bg-success">In Stock</label> <img
+								src="https://salt.tikicdn.com/cache/750x750/media/catalog/producttmp/25/4d/52/6e5a9b48c1316dc3ccc55df2c955ec24.jpg.webp"
+								alt="Laptop">
+						</div>
+						<div class="product-card-body">
+							<p class="product-brand">Nhà Xuất Bản Tổng hợp TP.HCM</p>
+							<h5 class="product-name">
+								<a href=""> Sách Thay Đổi Cuộc Sống Với Nhân Số Học </a>
+							</h5>
+							<div>
+								<span class="selling-price">166,000₫</span> <span
+									class="original-price">200,000₫</</span>
+							</div>
+							<div class="mt-2">
+								<a href="" class="btn btn1">Add To Cart</a> <a href=""
+									class="btn btn1"> <i class="fa fa-heart"></i>
+								</a> <a href="" class="btn btn1"> View </a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="product-card">
+						<div class="product-card-img">
+							<label class="stock bg-success">In Stock</label> <img
+								src="https://salt.tikicdn.com/cache/750x750/ts/product/f1/4a/64/dcb604fb1c221fa3b555586b42bd59ed.jpg.webp"
+								alt="Red MI Note 8">
+						</div>
+						<div class="product-card-body">
+							<p class="product-brand">Nhà Xuất Bản Tri Thức</p>
+							<h5 class="product-name">
+								<a href=""> Cơ Học Lượng Tử Và Thuyết Tương Đối </a>
+							</h5>
+							<div>
+								<span class="selling-price">215,000₫</span> <span
+									class="original-price">300,000₫</span>
+							</div>
+							<div class="mt-2">
+								<a href="" class="btn btn1">Add To Cart</a> <a href=""
+									class="btn btn1"> <i class="fa fa-heart"></i>
+								</a> <a href="" class="btn btn1"> View </a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="product-card">
+						<div class="product-card-img">
+							<label class="stock bg-success">In Stock</label> <img
+								src="https://salt.tikicdn.com/cache/750x750/ts/product/38/9d/61/237d4df1ffb225d9a44c6c62e601916c.jpg.webp"
+								alt="Mens Shirt">
+						</div>
+						<div class="product-card-body">
+							<p class="product-brand">Nhà Xuất Bản Thế Giới</p>
+							<h5 class="product-name">
+								<a href=""> Sách Minh Triết Trong Đời Sống (Tái Bản 2021)</a>
+							</h5>
+							<div>
+								<span class="selling-price">108,500₫</span> <span
+									class="original-price">150,000</span>
+							</div>
+							<div class="mt-2">
+								<a href="" class="btn btn1">Add To Cart</a> <a href=""
+									class="btn btn1"> <i class="fa fa-heart"></i>
+								</a> <a href="" class="btn btn1"> View </a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="product-card">
+						<div class="product-card-img">
+							<label class="stock bg-success">In Stock</label> <img
+								src="https://salt.tikicdn.com/cache/750x750/media/catalog/producttmp/7d/06/d8/df16d1f8bbe59bf561650c6f9ae61338.jpg.webp"
+								alt="Head Phone">
+						</div>
+						<div class="product-card-body">
+							<p class="product-brand">First News - Trí Việt/p>
+							<h5 class="product-name">
+								<a href=""> Trở Về Từ Cõi Sáng (Tái Bản)</a>
+							</h5>
+							<div>
+								<span class="selling-price">70,000₫</span> <span
+									class="original-price">120,000₫</span>
+							</div>
+							<div class="mt-2">
+								<a href="" class="btn btn1">Add To Cart</a> <a href=""
+									class="btn btn1"> <i class="fa fa-heart"></i>
+								</a> <a href="" class="btn btn1"> View </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="py-3 py-md-5 bg-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h4 class="mb-4"></h4>
+				</div>
+				<div class="col-md-3">
+					<div class="product-card">
+						<div class="product-card-img">
+							<label class="stock bg-success">In Stock</label> <img
+								src="https://salt.tikicdn.com/cache/750x750/ts/product/f5/4b/93/67ecaa8a2fb7155df2c621fb93e47843.jpg.webp"
+								alt="Laptop">
+						</div>
+						<div class="product-card-body">
+							<p class="product-brand">Nhà Xuất Bản Hồng Đức</p>
+							<h5 class="product-name">
+								<a href="">Sách Làm Chủ Cuộc Đời (Tái Bản 2020) </a>
+							</h5>
+							<div>
+								<span class="selling-price">50,300₫ </span> <span
+									class="original-price">70,300₫ </span>
+							</div>
+							<div class="mt-2">
+								<a href="" class="btn btn1">Add To Cart</a> <a href=""
+									class="btn btn1"> <i class="fa fa-heart"></i>
+								</a> <a href="" class="btn btn1"> View </a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="product-card">
+						<div class="product-card-img">
+							<label class="stock bg-success">In Stock</label> <img
+								src="https://salt.tikicdn.com/cache/750x750/ts/product/83/e2/62/649a2a3335e07bc133cf1e8b5adc29f4.jpg.webp"
+								alt="Red MI Note 8">
+						</div>
+						<div class="product-card-body">
+							<p class="product-brand">Nhà Xuất Bản Dân Trí</p>
+							<h5 class="product-name">
+								<a href="">  Tâm Lý Học Hẹn Hò - Nghệ Thuật Giao Tiếp Trong Tình Yêu </a>
+							</h5>
+							<div>
+								<span class="selling-price">90,300₫</span> <span
+									class="original-price">110,000₫</span>
+							</div>
+							<div class="mt-2">
+								<a href="" class="btn btn1">Add To Cart</a> <a href=""
+									class="btn btn1"> <i class="fa fa-heart"></i>
+								</a> <a href="" class="btn btn1"> View </a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="product-card">
+						<div class="product-card-img">
+							<label class="stock bg-success">In Stock</label> <img
+								src="https://salt.tikicdn.com/cache/750x750/ts/product/0a/15/ea/4e181a1dcfd2d16840c1fe242b914ba1.png.webp"
+								alt="Mens Shirt">
+						</div>
+						<div class="product-card-body">
+							<p class="product-brand">Nhà Xuất Bản Thanh Niên</p>
+							<h5 class="product-name">
+								<a href=""> Tâm Lý Học Mối Quan Hệ </a>
+							</h5>
+							<div>
+								<span class="selling-price">70,000₫ </span> <span
+									class="original-price">100,000₫ </span>
+							</div>
+							<div class="mt-2">
+								<a href="" class="btn btn1">Add To Cart</a> <a href=""
+									class="btn btn1"> <i class="fa fa-heart"></i>
+								</a> <a href="" class="btn btn1"> View </a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="product-card">
+						<div class="product-card-img">
+							<label class="stock bg-success">In Stock</label> <img
+								src="https://salt.tikicdn.com/cache/750x750/ts/product/09/2b/e4/e220a9a28a35a7c6ed3336e89c09178b.jpg.webp"
+								alt="Head Phone">
+						</div>
+						<div class="product-card-body">
+							<p class="product-brand">Nhà Xuất Bản Thế Giới</p>
+							<h5 class="product-name">
+								<a href=""> Không Phải Sói Nhưng Cũng Đừng Là Cừu </a>
+							</h5>
+							<div>
+								<span class="selling-price">89.000₫</span> <span
+									class="original-price">120.000₫</span>
+							</div>
+							<div class="mt-2">
+								<a href="" class="btn btn1">Add To Cart</a> <a href=""
+									class="btn btn1"> <i class="fa fa-heart"></i>
+								</a> <a href="" class="btn btn1"> View </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

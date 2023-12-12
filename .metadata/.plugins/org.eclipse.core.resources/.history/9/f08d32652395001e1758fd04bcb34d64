@@ -1,0 +1,11 @@
+@charset "ISO-8859-1";
+
+
+.product_silder.col-lg-9 {
+    width: 100%;
+}
+
+
+.product.col-lg-4 {
+    width: 20%;
+}

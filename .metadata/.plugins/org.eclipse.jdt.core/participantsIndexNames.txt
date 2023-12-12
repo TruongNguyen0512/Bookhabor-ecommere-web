@@ -1,0 +1,15 @@
+INDEX VERSION 1.134
+D:\Java\BookStore\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2942713581.index
+\Bai28_Bookstore_p16_UploadFile\src\main\java
+D:\Java\BookStore\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2663584291.index
+\bookHabor\src\main\java
+D:\Java\BookStore\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\32150184.index
+\bookHabor\src\main\java
+D:\Java\BookStore\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\249615584.index
+\bookHabor\src\main\java
+D:\Java\BookStore\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\801949905.index
+\Bai28_Bookstore_p16_UploadFile\src\main\java
+D:\Java\BookStore\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3846540501.index
+\bookHabor\src\main\java
+D:\Java\BookStore\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\918599077.index
+\BanHang3\src\main\java

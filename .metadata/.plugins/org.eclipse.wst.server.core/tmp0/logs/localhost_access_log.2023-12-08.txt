@@ -1,0 +1,16 @@
+127.0.0.1 - - [08/Dec/2023:23:56:53 +0700] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [08/Dec/2023:23:56:56 +0700] "GET /OriShop/index.jsp HTTP/1.1" 200 8654
+0:0:0:0:0:0:0:1 - - [08/Dec/2023:23:56:56 +0700] "GET /OriShop/css/home.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [08/Dec/2023:23:56:56 +0700] "GET /OriShop/img/slider/1.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [08/Dec/2023:23:56:56 +0700] "GET /OriShop/img/logo/logo.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [08/Dec/2023:23:56:56 +0700] "GET /OriShop/img/slider/2.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [08/Dec/2023:23:56:56 +0700] "GET /OriShop/img/slider/3.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [08/Dec/2023:23:56:56 +0700] "GET /OriShop/img/product/cuocdoidangsong.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [08/Dec/2023:23:56:56 +0700] "GET /OriShop/img/product/hoangtube.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [08/Dec/2023:23:56:56 +0700] "GET /OriShop/img/product/luocsuthoigian.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [08/Dec/2023:23:56:56 +0700] "GET /OriShop/img/product/biquyetdongianhoatinhyeu.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [08/Dec/2023:23:56:56 +0700] "GET /OriShop/img/product/daututhongminh.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [08/Dec/2023:23:56:57 +0700] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [08/Dec/2023:23:57:09 +0700] "GET /OriShop/khachhang/dangnhap.jsp HTTP/1.1" 200 2238
+0:0:0:0:0:0:0:1 - - [08/Dec/2023:23:57:09 +0700] "GET /OriShop/css/signin.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [08/Dec/2023:23:57:21 +0700] "POST /OriShop/khach-hang HTTP/1.1" 500 1545
